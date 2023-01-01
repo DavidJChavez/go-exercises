@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Compas y carritos</title>
+</head>
+<body>
+<ul>
+    {{range .Compas}}
+    <li>{{.Nombre}} - {{.Apodo}}</li>
+    {{end}}
+</ul>
+
+<ul>
+    {{range .Transportes}}
+    <li>Modelo: {{.Modelo}} con {{.Puertas}} puertas</li>
+    {{end}}
+</ul>
+</body>
+</html>
